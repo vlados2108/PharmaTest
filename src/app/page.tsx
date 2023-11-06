@@ -2,6 +2,7 @@
 import './MainPage.scss'
 import anketData from './shared/Utility'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
     const [activeQ, setActiveQ] = useState(1)
@@ -9,6 +10,7 @@ export default function Home() {
         [key: number]: number | null
     }>({})
 
+    const router = useRouter()
     const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSelectedAnswers((prevState) => ({
             ...prevState,
@@ -21,6 +23,7 @@ export default function Home() {
     }
     const handleBtnNextClick = () => {
         if (activeQ !== 3) setActiveQ(activeQ + 1)
+        else router.push('products')
     }
     return (
         <>
