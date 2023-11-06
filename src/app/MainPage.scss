@@ -126,3 +126,24 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .main-container {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .main-container .main-header {
+        .main-header-text1 {
+            font-size: 30px;
+        }
+        .main-header-text2 {
+            font-size: 15px;
+        }
+    }
+
+    .main-container .main-body {
+        height: 100%;
+    }
+}
