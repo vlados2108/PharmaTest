@@ -4,7 +4,7 @@ import data from './products.json'
 import './Products.scss'
 import HeartButton from '../shared/HeartButton'
 import Pagination from '../shared/Pagination'
-export default function page() {
+export default function Products() {
     const [currentPage, setCurrentPage] = useState<number | string>(1)
     const totalPages = 13
 
