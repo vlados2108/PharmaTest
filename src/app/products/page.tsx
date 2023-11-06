@@ -24,7 +24,7 @@ export default function Products() {
                     {data.map((el, index) => {
                         return (
                             <div className="product-wrapper" key={el.id}>
-                                <img className="product-image" src={el.image} />
+                                <img className="product-image" src={el.image} loading='lazy'/>
                                 <HeartButton />
                                 <div className="product-name">{el.title}</div>
                                 <div className="product-prices-wrapper">
