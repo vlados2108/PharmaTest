@@ -145,5 +145,9 @@
 
     .main-container .main-body {
         height: 100%;
+
+        .main-body-content .main-btn-container {
+            top: 80%;
+        }
     }
 }
